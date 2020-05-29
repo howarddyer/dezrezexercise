@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dezrez Online Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="onlinestore.js"></script>
+</head>
+
+<body>
+    <div class="shopping-cart">
+        <table class="table">
+            <tr>
+                <td>Item</td>
+                <td>Price</td>
+                <td>Offer</td>
+                <td>Quantity</td>
+                <td>Add to order</td>
+            </tr>
+            <tr>
+                <td>A</td>
+                <td>50</td>
+                <td>3 for 130</td>
+                <td><input type="number" min="0" value="0" data-a-quantity></td>
+                <td><input type="checkbox" data-a-checkbox></td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>30</td>
+                <td>2 for 45</td>
+                <td><input type="number" min="0" value="0" data-b-quantity></td>
+                <td><input type="checkbox" data-b-checkbox></td>
+            </tr>
+            <tr>
+                <td>C</td>
+                <td>20</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" data-c-quantity></td>
+                <td><input type="checkbox" data-c-checkbox></td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <td>15</td>
+                <td></td>
+                <td><input type="number" min="0" value="0" data-d-quantity></td>
+                <td><input type="checkbox" data-d-checkbox></td>
+            </tr>
+        </table>
+    </div>
+    <div class="shopping-cart-total">
+        <h2>Total:<span data-total> </span></h2>
+    </div>
+</body>
+
+<script> 
+
+    store.initialise();
+
+</script>
+</html>
