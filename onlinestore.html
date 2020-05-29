@@ -14,50 +14,43 @@
     <div class="top-bar">
         <img></img>
     </div>
-    <div class="shopping-cart">
+    <div class="table-container">
         <table class="table">
             <tr>
-                <td>Item</td>
-                <td>Price</td>
-                <td>Offer</td>
-                <td>Quantity</td>
-                <td>Add to order</td>
+                <td>&nbsp;</td>
+                <td width="50"><strong>Quantity</strong></td>
+                <td width="50"><strong>Price</strong></td>
             </tr>
             <tr>
                 <td>A</td>
+                <td>
+                <input name="qty_1" type="text" id="qty_1" value="0" size="3" data-price="50" /></td>
                 <td>50</td>
-                <td>3 for 130</td>
-                <td><input type="number" min="0" value="0" data-a-quantity></td>
-                <td><input type="checkbox" data-a-checkbox></td>
             </tr>
             <tr>
                 <td>B</td>
+                <td><input name="qty_2" type="text" id="qty_2" value="0" size="3" data-price="30" /></td>
                 <td>30</td>
-                <td>2 for 45</td>
-                <td><input type="number" min="0" value="0" data-b-quantity></td>
-                <td><input type="checkbox" data-b-checkbox></td>
             </tr>
             <tr>
                 <td>C</td>
+                <td><input name="qty_3" type="text" id="qty_3" value="0" size="3" data-price="20" /></td>
                 <td>20</td>
-                <td></td>
-                <td><input type="number" min="0" value="0" data-c-quantity></td>
-                <td><input type="checkbox" data-c-checkbox></td>
             </tr>
             <tr>
                 <td>D</td>
+                <td><input name="qty_4" type="text" id="qty_4" value="0" size="3" data-price="15" /></td>
                 <td>15</td>
-                <td></td>
-                <td><input type="number" min="0" value="0" data-d-quantity></td>
-                <td><input type="checkbox" data-d-checkbox></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><strong>Sub total:</strong></td>
+                <td><strong><div id="ItemsTotal">0</div></strong></td>
             </tr>
         </table>
-    </div>
-    <div>
-        <button data-update-basket>Update basket</button>
-    </div>
-    <div class="shopping-cart-total">
-        <h2>Total:<span data-total> </span></h2>
+        <div>
+            <button>Add to Order</button>
+        </div>
     </div>
 </body>
 
